@@ -1,0 +1,7 @@
+user_id,status,service,provider,user_email,date,slot,slot_end
+,pending,404,415,abrahammrjones@gmail.com,1591833600,1591876800,1591880400
+10.0,pending,456,417,abrahammrjones@gmail.com,1591833600,1591880400,1591891200
+10.0,pending,460,415,abrahammrjones@gmail.com,1591833600,1591880400,1591884000
+10.0,pending,458,415,abrahammrjones@gmail.com,1591833600,1591884000,1591891200
+10.0,pending,448,415,abrahammrjones@gmail.com,1591833600,1591884000,1591887600
+10.0,pending,442,415,abrahammrjones@gmail.com,1591833600,1591902000,1591905600
