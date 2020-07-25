@@ -15,9 +15,9 @@ from flask import Flask, render_template, request, redirect
 app = Flask(__name__)
 
 
-def create_chart_df(frame):
+def create_chart_df(myframe):
     times = []
-    for k, v in frame.iterrows():
+    for k, v in myframe.iterrows():
         time = pd.date_range(v.start_time, v.end_time, freq="60min",).time
         times.append([v.boat_length, v.provider, v.date, v.dockage, time])
 
@@ -33,11 +33,7 @@ def create_chart_df(frame):
     return df3
     
 
-# List of dictionaries
-dogs = [{"name": "Fido", "type": "Lab"},
-        {"name": "Rex", "type": "Collie"},
-        {"name": "Suzzy", "type": "Terrier"},
-        {"name": "Tomato", "type": "Retriever"}]
+
 
 
 # create route that renders index.html template
@@ -55,67 +51,48 @@ def index():
     password = config.password
     conn = mysql.connector.connect(
         host=host, database=database, user=user, password=password)
-    appointments = "SELECT user_id, status, service, provider, user_email, date, slot, slot_end, order_id \
-                    FROM wp_jet_appointments \
-                    ORDER BY slot asc"
+    appointments = "SELECT \
+					wp_jet_appointments.ID, \
+					wp_jet_appointments.status, \
+					a.post_title as service, \
+					b.post_title as provider, \
+					d.meta_value as dockage, \
+					wp_jet_appointments.user_email, \
+					wp_jet_appointments.date, \
+					wp_jet_appointments.slot AS start_time, \
+					wp_jet_appointments.slot_end AS end_time, \
+					wp_jet_appointments.slot_end - wp_jet_appointments.slot as duration, \
+					wp_jet_appointments.order_id AS confirmation, \
+					u.display_name as captain, \
+					c.meta_value AS boat_length, \
+					wp_jet_appointments.phone, \
+					wp_jet_appointments.comments \
+				FROM wp_jet_appointments \
+				INNER JOIN wp_posts AS a ON wp_jet_appointments.service = a.ID \
+				INNER JOIN wp_posts AS b ON wp_jet_appointments.provider = b.ID \
+				INNER JOIN wp_postmeta AS d ON wp_jet_appointments.provider = d.post_id \
+				INNER JOIN wp_users AS u ON wp_jet_appointments.user_id = u.ID \
+				INNER JOIN wp_usermeta AS c ON u.ID = c.user_id \
+				WHERE order_id > 0 \
+				AND d.meta_key = 'dock_length' \
+				AND c.meta_key = 'length' \
+				ORDER BY date, start_time ASC"
 
     ap_data = pd.read_sql_query(appointments, conn)
     ap_data.to_csv("assets/data/wp_jet_appointments.csv", index=False)
     ap = pd.read_csv("assets/data/wp_jet_appointments.csv")
-    duration = pd.to_datetime((ap.slot_end - ap.slot), unit='s').dt.time
-    ap["duration"] = duration
 
     # Using a unix epoch time
     ap["date"] = pd.to_datetime(ap["date"], unit='s')
-    ap["slot"] = pd.to_datetime(ap["slot"], unit='s').dt.time
-    ap["slot_end"] = pd.to_datetime(ap["slot_end"], unit='s').dt.time
-    ap["slot"] = ap["slot"].apply(lambda x: x.strftime('%I:%M %p'))
-    ap["slot_end"] = ap["slot_end"].apply(lambda x: x.strftime('%I:%M %p'))
-    ap["provider"] = ap["provider"].replace(
-        415, "City Winery at the Chicago Riverwalk")
-    ap["provider"] = ap["provider"].replace(417, "Marina City")
-    ap["provider"] = ap["provider"].replace(421, "Pizzeria Portofino")
-    ap["service"] = ap["service"].replace(478, "Dockage Under 24' 1hr")
-    ap["service"] = ap["service"].replace(476, "Dockage Under 24' 2hr")
-    ap["service"] = ap["service"].replace(474, "Dockage Under 24' 3hr")
-    ap["service"] = ap["service"].replace(472, "Dockage 25' to 34' 1hr")
-    ap["service"] = ap["service"].replace(470, "Dockage 25' to 34' 2hr")
-    ap["service"] = ap["service"].replace(468, "Dockage 25' to 34' 3hr")
-    ap["service"] = ap["service"].replace(466, "Dockage 35' to 44' 1hr")
-    ap["service"] = ap["service"].replace(464, "Dockage 35' to 44' 2hr")
-    ap["service"] = ap["service"].replace(462, "Dockage 35' to 44' 3hr")
-    ap["service"] = ap["service"].replace(460, "Dockage 45' to 54' 1hr")
-    ap["service"] = ap["service"].replace(458, "Dockage 45' to 54' 2hr")
-    ap["service"] = ap["service"].replace(456, "Dockage 45' to 54' 3hr")
-    ap["service"] = ap["service"].replace(454, "Dockage 55' to 64' 1hr")
-    ap["service"] = ap["service"].replace(452, "Dockage 55' to 64' 2hr")
-    ap["service"] = ap["service"].replace(450, "Dockage 55' to 64' 3hr")
-    ap["service"] = ap["service"].replace(448, "Dockage 65' to 124' 1hr")
-    ap["service"] = ap["service"].replace(446, "Dockage 65' to 124' 2hr")
-    ap["service"] = ap["service"].replace(444, "Dockage 65' to 124' 3hr")
-    ap["service"] = ap["service"].replace(442, "Dockage 125' and more 1hr")
-    ap["service"] = ap["service"].replace(440, "Dockage 125' and more 2hr")
-    ap["service"] = ap["service"].replace(438, "Dockage 125' and more 3hr")
-    user_query = "SELECT * \
-            FROM wp_usermeta \
-            WHERE meta_key = 'length' "
+    ap["start_time"] = pd.to_datetime(ap["start_time"], unit='s').dt.time
+    ap["end_time"] = pd.to_datetime(ap["end_time"], unit='s').dt.time
+    ap["start_time"] = ap["start_time"].apply(lambda x: x.strftime('%I:%M %p'))
+    ap["end_time"] = ap["end_time"].apply(lambda x: x.strftime('%I:%M %p'))
 
-    usermeta_data = pd.read_sql_query(user_query, conn)
-    usermeta_data.to_csv("assets/data/wp_usermeta.csv", index=False)
-    user = pd.read_csv("assets/data/wp_usermeta.csv")
-    ap_m = pd.merge(ap, user, how="inner", on="user_id")
-    pro_doc = {
-        "provider": ["City Winery at the Chicago Riverwalk", "Marina City", "Pizzeria Portofino"],
-        "dockage": [210, 55, 120]
-    }
-
-    pro_doc = pd.DataFrame(pro_doc)
-    dock_data = pd.merge(pro_doc, ap_m, how="inner", on="provider")
-    dock_data = dock_data[["provider", "dockage", "date",
-                        "slot", "slot_end", "duration", "meta_value"]]
+    dock_data = ap[["provider", "dockage", "date", "start_time", "end_time", "duration", "boat_length"]]
     #############################################
 
-    
+    frame = pd.DataFrame()
    
     # print(my_date)
     # # my_date = datetime.datetime.strptime(date_input, "%m/%d/%Y").strftime("%Y-%m-%d")
@@ -145,9 +122,10 @@ def index():
         except(IndexError):
             print('WARNING'*500)
             print(f'No Data for {date}')
+            theframe = pd.read_csv('output.csv')
         
-        frame = pd.read_csv('output.csv')
-    return render_template("index.html", myframe=frame.to_html(classes='male'))
+        theframe = pd.read_csv('output.csv')
+    return render_template("index.html", myframe=theframe.to_html(classes='male'))
 
 
 @app.route("/scrape")
