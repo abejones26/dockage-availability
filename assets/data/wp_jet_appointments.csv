@@ -1,7 +1,9 @@
 ID,status,service,provider,dockage,user_email,date,start_time,end_time,duration,confirmation,captain,boat_length,phone,comments
 19,completed,Dockage Under 24' 1hr,Pizzeria Portofino,120,abrahammrjones@gmail.com,1593302400,1593363600,1593367200,3600,631,tester,75,17734206926,
-60,processing,Dockage 35' to 44' 4hr,City Winery on the Chicago Riverwalk,210,jvpapar@gmail.com,1595635200,1595674800,1595689200,14400,42555,jvpapar,35,3129535575,Joe Paparella
-59,processing,Dockage 45' to 54' 2hr,City Winery on the Chicago Riverwalk,210,Jim.t.cote@gmail.com,1595635200,1595696400,1595703600,7200,42554,Jim,45,8153827155,
-61,processing,Dockage 35' to 44' 2hr,Pizzeria Portofino,120,jbascharon@vetnique.com,1595635200,1595703600,1595710800,7200,42558,jamesbascharon,36,6304410240,Talked with Abraham - Need reservation for Portofinos on Sat night
+60,completed,Dockage 35' to 44' 4hr,City Winery on the Chicago Riverwalk,210,jvpapar@gmail.com,1595635200,1595674800,1595689200,14400,42555,jvpapar,42,3129535575,Joe Paparella
+64,completed,Dockage 25' to 34' 1hr,City Winery on the Chicago Riverwalk,210,jmoraris@comcast.net,1595635200,1595674800,1595678400,3600,42569,Jmoraris,25,7735055546,
+63,completed,Dockage 45' to 54' 2hr,Pizzeria Portofino,120,service@offshorechi.com,1595635200,1595682000,1595689200,7200,42566,member_liaison,50,7739832709,would need the reservation from 1:30pm-3:30pm
+59,completed,Dockage 45' to 54' 2hr,City Winery on the Chicago Riverwalk,210,Jim.t.cote@gmail.com,1595635200,1595696400,1595703600,7200,42554,Jim,50,8153827155,
+61,completed,Dockage 35' to 44' 2hr,Pizzeria Portofino,120,jbascharon@vetnique.com,1595635200,1595703600,1595710800,7200,42558,jamesbascharon,36,6304410240,Talked with Abraham - Need reservation for Portofinos on Sat night
 33,completed,Dockage Under 24' 1hr,Pizzeria Portofino,120,abrahammrjones@gmail.com,1595894400,1595966400,1595970000,3600,42430,tester,75,17734206926,
-62,processing,Dockage Under 24' 2hr,Pizzeria Portofino,120,ERICSONAE@GMAIL.COM,1596758400,1596826800,1596834000,7200,42559,ericsonae,25,3125021190,Ashley Ericson (312) 502-1190
+62,completed,Dockage Under 24' 2hr,Pizzeria Portofino,120,ERICSONAE@GMAIL.COM,1596758400,1596826800,1596834000,7200,42559,ericsonae,25,3125021190,Ashley Ericson (312) 502-1190
