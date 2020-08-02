@@ -48,7 +48,6 @@ def index():
     global df
     global theframe
     global myframe
-    global html
 
     host = config.host
     database = config.database
@@ -100,13 +99,7 @@ def index():
 
     myframe = pd.DataFrame()
 
-    # print(my_date)
-    # # my_date = datetime.datetime.strptime(date_input, "%m/%d/%Y").strftime("%Y-%m-%d")
-    # if date_input is None:
-    #     mydate = "2020-06-11"
-    # else:
-    #     mydate = datetime.datetime.strptime(
-    #         str(date_input), "%m/%d/%Y").strftime("%Y-%m-%d")
+
     if request.method == "POST":
         req = request.form
         date = req.get("date")
@@ -131,25 +124,15 @@ def index():
             print(f'No Data for {date}')
             theframe = pd.read_csv('output.csv')
 
-        # theframe = pd.read_csv('output.csv')
+        theframe = pd.read_csv('output.csv')
         
-    return render_template("index.html", myframe=theframe.to_html(classes='male'))
+    return render_template("index.html", myframe= theframe.to_html(classes='male'))
 
 
 @app.route("/scrape")
 def scrape():
     # Redirect back to home page
     return redirect("/")
-
-    # # html_output = frame.to_html()
-    # dphtml = r'<link rel="stylesheet" type="text/css" media="screen" href="css-table.css" />' + '\n'
-    # dphtml += frame.to_html()
-
-    # with open('templates/datatable.html', 'w') as f:
-    #     f.write(dphtml)
-    #     f.close()
-    #     pass
-    # return render_template("datatable.html")
 
 
 if __name__ == "__main__":
