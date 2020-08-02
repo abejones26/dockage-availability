@@ -1,15 +1,18 @@
 # import necessary libraries
-import config
-import numpy as np
-from mysql.connector import Error
-import mysql.connector
-import plotly.express as px
-import time
-from datetime import datetime as dt
 import datetime
-import pandas as pd
 import os
-from flask import Flask, render_template, request, redirect
+import time
+from argparse import RawTextHelpFormatter
+from datetime import datetime as dt
+
+import config
+import mysql.connector
+import numpy as np
+import pandas as pd
+import plotly.express as px
+from flask import Flask, redirect, render_template, request
+from mysql.connector import Error
+
 
 # create instance of Flask app
 app = Flask(__name__)
@@ -45,6 +48,10 @@ def create_chart_df(myframe):
 
 @app.route("/", methods=["GET", "POST"])
 def index():
+    global df
+    global theframe
+    global myframe 
+
     host = config.host
     database = config.database
     user = config.user
@@ -92,7 +99,7 @@ def index():
     dock_data = ap[["provider", "dockage", "date", "start_time", "end_time", "duration", "boat_length"]]
     #############################################
 
-    frame = pd.DataFrame()
+    myframe = pd.DataFrame()
    
     # print(my_date)
     # # my_date = datetime.datetime.strptime(date_input, "%m/%d/%Y").strftime("%Y-%m-%d")
@@ -125,7 +132,8 @@ def index():
             theframe = pd.read_csv('output.csv')
         
         theframe = pd.read_csv('output.csv')
-    return render_template("index.html", myframe=theframe.to_html(classes='male'))
+        
+    return render_template("index.html", myframe= (theframe.to_html(classes='male')))
 
 
 @app.route("/scrape")
@@ -145,5 +153,3 @@ def scrape():
 
 if __name__ == "__main__":
     app.run(debug=True)
-
-
