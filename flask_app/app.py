@@ -97,7 +97,7 @@ def index():
                     "start_time", "end_time", "duration", "boat_length"]]
     #############################################
 
-    myframe = pd.DataFrame()
+    theframe = pd.DataFrame()
 
 
     if request.method == "POST":
@@ -126,7 +126,7 @@ def index():
 
         theframe = pd.read_csv('output.csv')
         
-    return render_template("index.html", myframe= theframe.to_html(classes='male'))
+    return render_template("index.html", myframe = theframe.to_html(classes='male'))
 
 
 @app.route("/scrape")
