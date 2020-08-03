@@ -1,7 +1,12 @@
 provider,hour,date,boat_length,dockage,availability
-City Winery on the Chicago Riverwalk,17:00 PM,2020-08-05,33,210,177
-City Winery on the Chicago Riverwalk,18:00 PM,2020-08-05,33,210,177
-City Winery on the Chicago Riverwalk,19:00 PM,2020-08-05,33,210,177
-Pizzeria Portofino,19:00 PM,2020-08-05,89,210,121
-Pizzeria Portofino,20:00 PM,2020-08-05,89,210,121
-Pizzeria Portofino,21:00 PM,2020-08-05,89,210,121
+City Winery on the Chicago Riverwalk,13:00 PM,2020-08-01,27,210,183
+City Winery on the Chicago Riverwalk,14:00 PM,2020-08-01,27,210,183
+City Winery on the Chicago Riverwalk,15:00 PM,2020-08-01,96,210,114
+City Winery on the Chicago Riverwalk,16:00 PM,2020-08-01,69,210,141
+City Winery on the Chicago Riverwalk,17:00 PM,2020-08-01,69,210,141
+City Winery on the Chicago Riverwalk,19:00 PM,2020-08-01,119,210,91
+City Winery on the Chicago Riverwalk,20:00 PM,2020-08-01,119,210,91
+City Winery on the Chicago Riverwalk,21:00 PM,2020-08-01,119,210,91
+Pizzeria Portofino,19:00 PM,2020-08-01,40,210,170
+Pizzeria Portofino,20:00 PM,2020-08-01,40,210,170
+Pizzeria Portofino,21:00 PM,2020-08-01,40,210,170

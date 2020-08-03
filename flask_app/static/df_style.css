@@ -2,8 +2,8 @@
 
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
 body {
-    background: -webkit-linear-gradient(left, #25c481, #25b7c4);
-    background: linear-gradient(to right, #25c481, #25b7c4);
+    background: -webkit-linear-gradient(left, #52C1AF, #434554);
+    background: linear-gradient(to right, #52C1AF, #434554);
     font-family: 'Roboto', sans-serif;
 }
 
@@ -14,7 +14,7 @@ section {
 a,
 h1,
 h2 {
-    color: #377ba8;
+    color: #434554;
 }
 
 h1,
@@ -43,12 +43,12 @@ table.dataframe,
 }
 
 .male th {
-    background-color: #add8e6;
-    color: white;
+    background-color: #434554;
+    color: #434554;
 }
 
 .female th {
-    background-color: #77dd77;
+    background-color: #52C1AF;
     color: white;
 }
 
