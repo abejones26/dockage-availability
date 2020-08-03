@@ -25,7 +25,7 @@ ID,status,service,provider,dockage,user_email,date,start_time,end_time,duration,
 122,processing,Dockage 35' to 44' 2hr,City Winery on the Chicago Riverwalk,210,jake.schumer@gmail.com,1596240000,1596308400,1596315600,7200,42724,kingschume,44,8477676934,
 78,processing,Dockage 45' to 54' 2hr,Pizzeria Portofino,120,adam.c.cooper@me.com,1596326400,1596387600,1596394800,7200,42614,Adam Cooper,53,3124206700,Ideally the reservation will be 5:45-7:45 pm but that wasn\&#039;t an option
 72,processing,Dockage 45' to 54' 2hr,Pizzeria Portofino,120,dan.s.weaver@gmail.com,1596499200,1596567600,1596574800,7200,42601,Weaver,47,4157305961,
-127,on-hold,Dockage 25' to 34' 2hr,City Winery on the Chicago Riverwalk,210,robertmetzlaw@outlook.com,1596585600,1596646800,1596654000,7200,42726,bmetz13,33,7735318635,
+127,processing,Dockage 25' to 34' 2hr,City Winery on the Chicago Riverwalk,210,robertmetzlaw@outlook.com,1596585600,1596646800,1596654000,7200,42726,bmetz13,33,7735318635,
 96,processing,Dockage 25' to 34' 2hr,Pizzeria Portofino,120,chasport17@gmail.com,1596585600,1596654000,1596661200,7200,42657,chasport,31,3125454166,Dinner 8:30
 69,processing,Dockage 55' to 64' 2hr,Pizzeria Portofino,120,hannah.vilagi@gmail.com,1596585600,1596654000,1596661200,7200,42591,hvilagi,58,4403700618,
 115,processing,Dockage 25' to 34' 2hr,City Winery on the Chicago Riverwalk,210,shinneman@gmail.com,1596672000,1596740400,1596747600,7200,42714,cshinneman,31,3127221777,
