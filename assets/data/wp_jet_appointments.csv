@@ -1,9 +1,50 @@
 ID,status,service,provider,dockage,user_email,date,start_time,end_time,duration,confirmation,captain,boat_length,phone,comments
-19,completed,Dockage Under 24' 1hr,Pizzeria Portofino,120,abrahammrjones@gmail.com,1593302400,1593363600,1593367200,3600,631,tester,75,17734206926,
+19,completed,Dockage Under 24' 1hr,Pizzeria Portofino,120,abrahammrjones@gmail.com,1593302400,1593363600,1593367200,3600,631,tester,85,17734206926,
 60,completed,Dockage 35' to 44' 4hr,City Winery on the Chicago Riverwalk,210,jvpapar@gmail.com,1595635200,1595674800,1595689200,14400,42555,jvpapar,42,3129535575,Joe Paparella
 64,completed,Dockage 25' to 34' 1hr,City Winery on the Chicago Riverwalk,210,jmoraris@comcast.net,1595635200,1595674800,1595678400,3600,42569,Jmoraris,25,7735055546,
 63,completed,Dockage 45' to 54' 2hr,Pizzeria Portofino,120,service@offshorechi.com,1595635200,1595682000,1595689200,7200,42566,member_liaison,50,7739832709,would need the reservation from 1:30pm-3:30pm
 59,completed,Dockage 45' to 54' 2hr,City Winery on the Chicago Riverwalk,210,Jim.t.cote@gmail.com,1595635200,1595696400,1595703600,7200,42554,Jim,50,8153827155,
 61,completed,Dockage 35' to 44' 2hr,Pizzeria Portofino,120,jbascharon@vetnique.com,1595635200,1595703600,1595710800,7200,42558,jamesbascharon,36,6304410240,Talked with Abraham - Need reservation for Portofinos on Sat night
-33,completed,Dockage Under 24' 1hr,Pizzeria Portofino,120,abrahammrjones@gmail.com,1595894400,1595966400,1595970000,3600,42430,tester,75,17734206926,
+71,processing,Dockage 35' to 44' 2hr,Pizzeria Portofino,120,mhaffling4032@gmail.com,1595721600,1595790000,1595797200,7200,42597,mikehaffling,45,7089551866,
+76,processing,Dockage 45' to 54' 2hr,Pizzeria Portofino,120,sue815d@aol.com,1595808000,1595869200,1595876400,7200,42606,Sue815d,51,8479773500,Just ordering carryout
+83,processing,Dockage 45' to 54' 1hr,Pizzeria Portofino,120,danny@s2nhospitality.com,1595894400,1595962800,1595966400,3600,42616,DannyJVargas,50,7082775761,
+33,completed,Dockage Under 24' 1hr,Pizzeria Portofino,120,abrahammrjones@gmail.com,1595894400,1595966400,1595970000,3600,42430,tester,85,17734206926,
+94,processing,Dockage 65' to 124' 1hr,Pizzeria Portofino,120,christopher.hutter@gmail.com,1595980800,1596049200,1596052800,3600,42648,Chutter,66,3125158256,
+77,processing,Dockage 65' to 124' 2hr,City Winery on the Chicago Riverwalk,210,dmdball@yahoo.com,1596067200,1596121200,1596128400,7200,42612,daviddeleeuw,74,5748500058,May need to do a drop off around 8 if possible 
+101,processing,Dockage 35' to 44' 2hr,Pizzeria Portofino,120,pdanly@gmail.com,1596067200,1596135600,1596142800,7200,42697,Pdanly,41,3058127600,
+100,processing,Dockage 55' to 64' 2hr,Pizzeria Portofino,120,jburdeen@gmail.com,1596153600,1596214800,1596222000,7200,42696,jburdeen,58,2246288980,Azimut 62S 2008
+73,processing,Dockage 25' to 34' 3hr,City Winery on the Chicago Riverwalk,210,dslager@perfectaire.us,1596153600,1596214800,1596225600,10800,42603,Darrel Slager,33,8154124763,
+111,processing,Dockage 35' to 44' 1hr,Pizzeria Portofino,120,thepinkertons@me.com,1596153600,1596222000,1596225600,3600,42710,Thepinkertons,45,7138707464,
+114,processing,Dockage 25' to 34' 1hr,City Winery on the Chicago Riverwalk,210,Ramchicago@aol.com,1596153600,1596225600,1596229200,3600,42712,Ramchicago,29,7082593411,
+116,processing,Dockage Under 24' 2hr,City Winery on the Chicago Riverwalk,210,nickbiere@gmail.com,1596240000,1596286800,1596294000,7200,42715,nickbiere,27,4028808997,Boat is actually a Boston Whaler Outrage 270 but that wasn\&#039;t an option
+86,processing,Dockage 45' to 54' 2hr,City Winery on the Chicago Riverwalk,210,stevedowdy@aol.com,1596240000,1596294000,1596301200,7200,42627,AbsoluteMess,50,8477365039,Ron Silva sent us
+99,processing,Dockage Under 24' 2hr,City Winery on the Chicago Riverwalk,210,buntain1@gmail.com,1596240000,1596294000,1596301200,7200,42695,jbuntain,19,7732517200,
+110,processing,Dockage 25' to 34' 2hr,City Winery on the Chicago Riverwalk,210,rpartikas2003@yahoo.com,1596240000,1596308400,1596315600,7200,42700,rpartikas,31,7732097787,thank you Kevin 
+87,processing,Dockage 35' to 44' 2hr,Pizzeria Portofino,120,greggpavalon@yahoo.com,1596240000,1596308400,1596315600,7200,42633,Captgregg,40,8477789559,
+91,processing,Dockage 45' to 54' 2hr,City Winery on the Chicago Riverwalk,210,paul.lueken@dkmortgage.com,1596240000,1596308400,1596315600,7200,42637,paul.lueken,44,6307406286,
+122,processing,Dockage 35' to 44' 2hr,City Winery on the Chicago Riverwalk,210,jake.schumer@gmail.com,1596240000,1596308400,1596315600,7200,42724,kingschume,44,8477676934,
+78,refunded,Dockage 45' to 54' 2hr,Pizzeria Portofino,120,adam.c.cooper@me.com,1596326400,1596387600,1596394800,7200,42614,Adam Cooper,53,3124206700,Ideally the reservation will be 5:45-7:45 pm but that wasn\&#039;t an option
+72,processing,Dockage 45' to 54' 2hr,Pizzeria Portofino,120,dan.s.weaver@gmail.com,1596499200,1596567600,1596574800,7200,42601,Weaver,47,4157305961,
+127,processing,Dockage 25' to 34' 2hr,City Winery on the Chicago Riverwalk,210,robertmetzlaw@outlook.com,1596585600,1596646800,1596654000,7200,42726,bmetz13,33,7735318635,
+145,on-hold,Dockage 25' to 34' 2hr,City Winery on the Chicago Riverwalk,210,jstorino@jenner.com,1596585600,1596646800,1596654000,7200,42766,John storino,35,3123166151,
+146,on-hold,Dockage 45' to 54' 2hr,City Winery on the Chicago Riverwalk,210,johnbaessler@metalserve.com,1596585600,1596646800,1596654000,7200,42767,Jonny b,51,3124044554,
+96,processing,Dockage 25' to 34' 2hr,Pizzeria Portofino,120,chasport17@gmail.com,1596585600,1596654000,1596661200,7200,42657,chasport,31,3125454166,Dinner 8:30
+69,processing,Dockage 55' to 64' 2hr,Pizzeria Portofino,120,hannah.vilagi@gmail.com,1596585600,1596654000,1596661200,7200,42591,hvilagi,58,4403700618,
+130,processing,Dockage 25' to 34' 2hr,City Winery on the Chicago Riverwalk,210,gregschneider25@hotmail.com,1596672000,1596733200,1596740400,7200,42737,Althea28,27,7739723563,
+115,processing,Dockage 25' to 34' 2hr,City Winery on the Chicago Riverwalk,210,shinneman@gmail.com,1596672000,1596740400,1596747600,7200,42714,cshinneman,31,3127221777,
+143,on-hold,Dockage Under 24' 2hr,Pizzeria Portofino,120,druby1@aol.com,1596672000,1596740400,1596747600,7200,42765,Daniel Ruby,18,3123201000,We will arrive at aprox 8:30 for a 9PM reservation at portafino 
+88,processing,Dockage 35' to 44' 2hr,Pizzeria Portofino,120,ddunlap@dcgroofing.com,1596758400,1596812400,1596819600,7200,42635,dominic Wayne dunlap,35,8153788340,
+90,processing,Dockage 35' to 44' 1hr,Pizzeria Portofino,120,ddunlap@dcgroofing.com,1596758400,1596819600,1596823200,3600,42636,dominic Wayne dunlap,35,8153788340,"42635 extended stay, daughters 21st birthday, thanks Abraham"
+142,processing,Dockage 45' to 54' 1hr,City Winery on the Chicago Riverwalk,210,adolfo.solares@tbird.asu.edu,1596758400,1596826800,1596830400,3600,42762,adolfosolares,55,3122927822,
 62,completed,Dockage Under 24' 2hr,Pizzeria Portofino,120,ERICSONAE@GMAIL.COM,1596758400,1596826800,1596834000,7200,42559,ericsonae,25,3125021190,Ashley Ericson (312) 502-1190
+117,processing,Dockage 35' to 44' 1hr,Pizzeria Portofino,120,alexperraud13@gmail.com,1596758400,1596830400,1596834000,3600,42720,aperraud,34,8473632291,
+133,on-hold,Dockage 45' to 54' 1hr,Pizzeria Portofino,120,jpalermo@remax.net,1596758400,1596830400,1596834000,3600,42745,jpalermo,51,7086705053,8-9pm
+129,on-hold,Dockage 45' to 54' 1hr,Jefferson Beach Yacht Sales,60,al.bartkus@gmail.com,1596844800,1596895200,1596898800,3600,42732,Marianne,50,7735105511,need 2pm to 6pm. Need 1st hour than pick up and drop off for a wedding until 6pm
+139,processing,Dockage 65' to 124' 1hr,City Winery on the Chicago Riverwalk,210,therivermaster@gmail.com,1596844800,1596909600,1596913200,3600,42749,paulryzak,59,3126183448,I\&#039;m a 64 ft Bluewater motorboat looking to pick up a group of passengers from your city winery dock or the dock at Wells street.  I\&#039;m a charter boat.  I would like to drop them off later too.
+135,processing,Dockage 35' to 44' 2hr,Pizzeria Portofino,120,chuck_blasgen@hotmail.com,1596844800,1596913200,1596920400,7200,42746,cjbkad,35,7737107110,"Will likely arrive 15 minutes early for 7:00 reservation, but system would no allow 3 hour booking"
+74,refunded,Dockage 45' to 54' 2hr,Pizzeria Portofino,120,dan.s.weaver@gmail.com,1597190400,1597258800,1597266000,7200,42602,Weaver,47,4157305961,
+128,processing,Dockage 25' to 34' 2hr,Pizzeria Portofino,120,dis329@yahoo.com,1597449600,1597510800,1597518000,7200,42728,danseruya,27,3123915011,Boat will be a Crownline 264
+131,processing,Dockage 55' to 64' 2hr,Pizzeria Portofino,120,halliemsmith4@gmail.com,1597536000,1597597200,1597604400,7200,42738,HallieMSmith4,55,8473409619,Hallie Smith 847-340-9619
+75,processing,Dockage 45' to 54' 2hr,Pizzeria Portofino,120,eejekli@gmail.com,1598054400,1598101200,1598108400,7200,42604,Elizabeth Jekli,45,3124205982,Hello! Coming with a bachelorette party of 7 girls total on debonair and would like to stop for a lunch reservation from 1-3. Thank you!
+65,processing,Dockage 35' to 44' 2hr,Pizzeria Portofino,120,Mpni@aol.com,1599177600,1599246000,1599253200,7200,42578,Jkreiling,35,7024949800,See you at Portofino! 
+95,processing,Dockage 25' to 34' 2hr,Pizzeria Portofino,120,ryan.mischnick@gmail.com,1599264000,1599325200,1599332400,7200,42655,Rmischnick,31,3127186851,
